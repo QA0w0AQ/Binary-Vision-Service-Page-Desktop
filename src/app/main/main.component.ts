@@ -34,6 +34,9 @@ export class MainComponent implements OnInit {
         });
     }
 
+    routeTo(page) {
+      // location.href = location.href.split('/')[0] + '/' + page;
+  }
 
     hasScrolled() {
       let st;
