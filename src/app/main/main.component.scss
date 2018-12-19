@@ -3,7 +3,7 @@
   }
 
 .title {
-    font-size: 5.2vw;
+    font-size: 4.8vw;
     line-height: 4.8vw;
     color: rgb(255, 217, 62);
     margin-bottom: 0;
@@ -21,7 +21,7 @@
     display: none;
     animation-duration: 0.6s;
     font-family: 'Monteserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     float: right;
   }
 
@@ -65,7 +65,8 @@
     right: 0;
     left: 0;
     padding: 0 11%;
-    background-color: rgb(3, 22, 131);
+    background-color: #242B71
+    ;
     height: 100vh;
     z-index: -1;
     .footer-content {
@@ -444,10 +445,28 @@ header {
     }
   }
 
+  .binaryvision {
+    text-align: justify;
+    font-size: 2vw;
+    margin-top: 10vw;
+    padding-left: 18vw;
+    display: none;
+    animation-duration: 1.6s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
+.content {
+    text-align: justify;
+    width: 54vw;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    display: none;
+    animation-duration: 0.6s;
+    padding-left: 25vw;
+}
 .case-studies-section {
     background-color: rgb(255, 255, 255);
-    height: 350vw;
+    height: 311vw;
     position: relative;
     .case-study {
         display: flex;
@@ -457,104 +476,150 @@ header {
     }
     .development-brand {
         font-size: 2.2vw;
-        top: 32vw;
+        top: -8vw;
         left: -10vw;
         position: absolute;
         transform: rotate(-90deg);
         font-family: sans-serif;
+        z-index: 1;
+        // display: none;
+        // animation-duration: 1s;
         }
         .development-brand-span{
-            font-size: 2vw;
-            left: 5vw;
-            top: 42vw;
+            font-size: 1.5vw;
+            left: 6vw;
+            top: 3vw;
             position: absolute;
             transform: rotate(-90deg);
+            font-family: 'Poppins', sans-serif;
+            z-index: 1;
+            // display: none;
+            // animation-duration: 1s;
         }
         .background1 {
-            background: rgb(255, 94, 1);
+            // display: none;
+            // animation-duration: 1s;
+            opacity: 0;
+            background: #F08064;
             height: 50vw;
             width: 88vw;
-            margin-top: 21vw;
+            margin-top: 48vw;
             margin-left: 0vw;
             .development-brand-content {
                 font-size: 1.3vw;
-                margin-left: 16vw;
+                margin-left: 18vw;
                 padding-top: 14vw;
+                text-align: justify;
+                margin-right: 45vw;
+                display: none;
+                animation-delay: 1.5s;
+                animation-duration: 1s;
+                font-family: 'Poppins', sans-serif;
             }
         }
         
         .binaryvision-development-pic {
             img {
                 position: absolute;
-                top: 22vw;
+                top: -15vw;
                 height: 77vw;
                 left: 42vw;
+                display: none;
+                animation-duration: 1s;
             }
+
         }
-        
-        .binaryvision {
-            text-align: center;
-            font-size: 2vw;
-            margin-top: 10vw;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-        }
-        
-        .content {
-            text-align: center;
-            font-size: 1.5vw;
-            font-family: sans-serif
-        }
-        
+             
         .development-services {
             font-size: 1.3vw;
             position: absolute;
-            top: 75vw;
+            top:37.5vw;
             left: 11vw;
+            line-height: 1.8vw;
+            display: none;
+            animation-delay: 1.5s;
+            animation-duration: 1s;
+            h4{
+                margin-bottom: 0;
+                font-family: 'Monteserrat', sans-serif;
+            }
+            ul{
+                padding-left: 0;
+                margin-top: 0;
+                font-family: 'Poppins', sans-serif;
+            }
         }
 
         .background2 {
-            background: rgb(52, 204, 209);
+            opacity: 0;
+            background: #03A6B4;
             height: 50vw;
             width: 88vw;
             margin-top: 28vw;
             margin-left: auto;
             .ui-brand-content {
+                display: none;
                 font-size: 1.3vw;
-                margin-left: 41vw;
-                padding-top: 13vw;
+                margin-left: 38vw;
+                padding-top: 10vw;
+                margin-right: 25vw;
+                text-align: justify;
+                font-family: 'Poppins', sans-serif;
+                animation-delay: 1.5s;
+                animation-duration: 1s;
             }
+
         }
         .ui-brand {
             font-size: 2.2vw;
-            top: 114vw;
+            top: 76vw;
             left: 67vw;
             position: absolute;
             transform: rotate(90deg);
             font-family: sans-serif; 
+            z-index: 1;
         }
         .ui-brand-span{
-            font-size: 2vw;
-            left: 70vw;
-            top: 116vw;
+            font-size: 1.5vw;
+            left: 72vw;
+            top: 81vw;
             position: absolute;
             transform: rotate(90deg);
+            font-family: 'Poppins', sans-serif;
+            z-index: 1;
         }
+
+
         .ui-services {
             font-size: 1.3vw;
             position: absolute;
-            top: 153vw;
-            left: 77vw;
+            top: 116vw;
+            left: 68vw;
+            line-height: 1.8vw;
+            display: none;
+            animation-delay: 1.5s;
+            animation-duration: 1s;
             h4{
+                margin-bottom: 0;
+                font-family: 'Monteserrat', sans-serif;
+                text-align: end;
+            }
+            ul{
+                padding-left: 0;
+                margin-top: 0;
+                font-family: 'Poppins', sans-serif;
                 text-align: end;
             }
         }
+
         .binaryvision-uiux-pic-box{
             width: 46vw;
             height: 90vw;
             position: absolute;
-            top: 100vw;
+            top: 62vw;
+            display: none;
             img{
-                width: 50%;
+                width: 51%;
             }
             .pic1{
                 position: relative;
@@ -573,54 +638,79 @@ header {
         }
 
         .backgroud3 {
-            background: rgb(248, 61, 28);
+            background: #FE294D;
             height: 50vw;
             width: 88vw;
             margin-top: 28vw;
             margin-left: 0vw;
+            opacity: 0;
             .digital-brand-content {
+                display: none;
                 font-size: 1.3vw;
-                margin-left: 23vw;
+                margin-left: 19vw;
                 padding-top: 11vw;
-                margin-right: 42vw;
+                margin-right: 45vw;
+                text-align: justify;
+                animation-delay: 1.5s;
+                animation-duration: 1s;
+                font-family: 'Poppins', sans-serif;
             }
         }
         
         .digital-brand {
             font-size: 2.2vw;
-            top: 190vw;
+            top: 152vw;
             left: -6vw;
             position: absolute;
             transform: rotate(-90deg);
             font-family: sans-serif; 
+            z-index: 1;
         }
         .digital-brand-span{
-            font-size: 2vw;
-            left: 5vw;
-            top: 195vw;
+            font-size: 1.5vw;
+            left: 6vw;
+            top: 159vw;
             position: absolute;
             transform: rotate(-90deg);
+            font-family: 'Poppins', sans-serif;
+            z-index: 1;
         }
 
         .digital-services {
             font-size: 1.3vw;
             position: absolute;
-            top: 232vw;
+            top: 194vw;
             left: 11vw;
+            line-height: 1.8vw;
+            display: none;
+            animation-delay: 1.5s;
+            animation-duration: 1s;
+            h4{
+                margin-bottom: 0;
+                font-family: 'Monteserrat', sans-serif;
+            }
+            ul{
+                padding-left: 0;
+                margin-top: 0;
+                font-family: 'Poppins', sans-serif;
+            }            
         }
 
         .binaryvision-digital-pic-box {
+          // display: none;
             .pic1 {
                 position: absolute;
-                top: 174vw;
+                top: 136vw;
                 right: 5vw;
+                display: none;
                 img {
                     width: 67vw;
                 }
             }
             .pic2 {
+                display: none;
                 position: absolute;
-                top: 193vw;
+                top: 155vw;
                 right: 0vw;
                 img {
                     width: 28vw;
@@ -629,48 +719,71 @@ header {
         }
 
         .backgroud4 {
-            background: rgba(236, 213, 2, 0.925);
+            opacity: 0;
+            background: #FFD93E;
             height: 50vw;
             width: 88vw;
             margin-top: 28vw;
             margin-left: auto;
             .brand-brand-content {
+                display: none;
                 font-size: 1.3vw;
-                margin-left: 45vw;
+                margin-left: 41vw;
                 padding-top: 14vw;
                 margin-right: 21vw;
+                text-align: justify;
+                font-family: 'Poppins', sans-serif;
+                animation-delay: 1.5s;
+                animation-duration: 1s;
             }
         }
 
         .brand-brand {
+            z-index: 1;
             font-size: 2.2vw;
-            top: 272vw;
+            top: 233vw;
             left: 66vw;
             position: absolute;
             transform: rotate(90deg);
             font-family: sans-serif;
         }
         .brand-brand-span {
-            font-size: 2vw;
-            left: 69vw;
-            top: 274vw;
+            font-size: 1.5vw;
+            left: 71.5vw;
+            top: 238vw;
             position: absolute;
             transform: rotate(90deg);
+            font-family: 'Poppins', sans-serif;
+            z-index: 1;
         }
         .brand-services {
             font-size: 1.3vw;
             position: absolute;
-            top: 309vw;
-            left: 72vw;
+            top: 271vw;
+            left: 68vw;
+            line-height: 1.8vw;
+            display: none;
+            animation-delay: 1.5s;
+            animation-duration: 1s;
             h4{
+                margin-bottom: 0;
+                font-family: 'Monteserrat', sans-serif;
+                text-align: end;
+            }
+            ul{
+                padding-left: 0;
+                margin-top: 0;
+                font-family: 'Poppins', sans-serif;
                 text-align: end;
             }
         }
+
         .binaryvision-brand-pic-box {
             .box1 {
                 width: 20vw;
                 position: absolute;
-                top: 260vw;
+                top: 222vw;
+                display: none;
                 .p2{
                     width: 19vw;
                 }
@@ -682,10 +795,11 @@ header {
                 }
             }
             .box2 {
+                display: none;
                 width: 20vw;
                 position: absolute;
-                top: 269.5vw;
-                left: 22vw;
+                top: 232.5vw;
+                left: 19vw;
                 img {
                     width: 31vw;
                 }
@@ -694,6 +808,7 @@ header {
                 }
                 .p2{
                     height: 25vw;
+                    margin-top: -3vw;
                 }
             }
         }
