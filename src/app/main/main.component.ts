@@ -70,10 +70,10 @@ export class MainComponent implements OnInit {
       document.getElementById('logo-nav-box').className = 'logo-nav-box animated fadeInDown';
   }, 100);
   document.getElementById('menu-btn').onmouseover = () => {
-      document.getElementById('menu-btn').setAttribute('src', '../../assets/Services/menu-hover.png');
+      document.getElementById('menu-btn').setAttribute('src', 'assets/Services/menu-hover.png');
   };
   document.getElementById('menu-btn').onmouseout = () => {
-      document.getElementById('menu-btn').setAttribute('src', '../../assets/Services/menu.png');
+      document.getElementById('menu-btn').setAttribute('src', 'assets/Services/menu.png');
   };
   document.getElementById('logo-nav-box').addEventListener('animationend', () => {
       document.getElementById('header-title').style.display = 'block';
