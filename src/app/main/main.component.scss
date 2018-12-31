@@ -3,13 +3,6 @@
   }
 
 
-// .parallax {
-//   min-height: 500px;
-//   background: transparent;
-// }
-
-
-
 .title {
     font-size: 4.8vw;
     line-height: 4.8vw;
@@ -598,7 +591,7 @@ header {
             font-family: sans-serif; 
             z-index: 1;
             animation-name: uiBrand;
-            // display: none;
+            display: none;
             animation-duration: 1s;
         }
         @keyframes uiBrand {
@@ -613,8 +606,14 @@ header {
             transform: rotate(90deg);
             font-family: 'Poppins', sans-serif;
             z-index: 1;
+            animation-name: uiBrandSpan;
+            display: none;
+            animation-duration: 1s;
         }
-
+        @keyframes uiBrandSpan {
+          from { top: 89vw;opacity: 0;} 
+          to {top: 81vw;opacity: 1;}
+        }
 
         .ui-services {
             font-size: 1.3vw;
@@ -691,6 +690,13 @@ header {
             transform: rotate(-90deg);
             font-family: sans-serif; 
             z-index: 1;
+            animation-name: digitalBrand;
+            display: none;
+            animation-duration: 1s;
+        }
+        @keyframes digitalBrand {
+          from { top: 160vw;opacity: 0;} 
+          to {top: 152vw;opacity: 1;}
         }
         .digital-brand-span{
             font-size: 1.5vw;
@@ -700,8 +706,14 @@ header {
             transform: rotate(-90deg);
             font-family: 'Poppins', sans-serif;
             z-index: 1;
+            animation-name: digitalBrandSpan;
+            display: none;
+            animation-duration: 1s;
         }
-
+        @keyframes digitalBrandSpan {
+          from { top: 168vw;opacity: 0;} 
+          to {top: 159vw;opacity: 1;}
+        }
         .digital-services {
             font-size: 1.3vw;
             position: absolute;
@@ -776,19 +788,33 @@ header {
             z-index: 1;
             font-size: 2.2vw;
             top: 233vw;
-            left: 66vw;
+            left: 65vw;
             position: absolute;
             transform: rotate(90deg);
             font-family: sans-serif;
+            animation-name: brandBrand;
+            display: none;
+            animation-duration: 1s;
+        }
+        @keyframes brandBrand {
+          from { top: 241vw;opacity: 0;} 
+          to {top: 233vw;opacity: 1;}
         }
         .brand-brand-span {
             font-size: 1.5vw;
-            left: 71.5vw;
+            left: 70.5vw;
             top: 238vw;
             position: absolute;
             transform: rotate(90deg);
             font-family: 'Poppins', sans-serif;
             z-index: 1;
+            animation-name: brandBrandSpan;
+            display: none;
+            animation-duration: 1s;
+        }
+          @keyframes brandBrandSpan {
+          from { top: 246vw;opacity: 0;} 
+          to {top: 238vw;opacity: 1;}
         }
         .brand-services {
             font-size: 1.3vw;

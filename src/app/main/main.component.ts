@@ -131,7 +131,7 @@ document.getElementById('header-title').addEventListener('animationend', () => {
       });
     
     //binaryvision-development
-    if(top>=4128){
+    if(top>=1032){
       document.getElementById('binaryvision-development-pic1').style.display="block";
       document.getElementById('binaryvision-development-pic1').className='binaryvision-development-pic animated fadeInRight'; 
       document.getElementById('background1').style.opacity="1";
@@ -148,7 +148,7 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     const binaryvisionUi = document.getElementById('case-studies-section').offsetTop + innerHeight*1.3 - (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
 
-    if(top>=8918){
+    if(top>=2229.5){
     document.getElementById('binaryvision-uiux-pic-box').style.display="block";
     document.getElementById('binaryvision-uiux-pic-box').className='binaryvision-uiux-pic-box animated fadeInLeft'; 
     document.getElementById('background2').style.opacity="1";
@@ -158,7 +158,9 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     document.getElementById('ui-services').style.display="block";
     document.getElementById('ui-services').className='ui-services animated fadeInUp';
     document.getElementById('ui-brand').style.display="block";
-      document.getElementById('ui-brand').className='ui-brand animated uiBrand'; 
+    document.getElementById('ui-brand').className='ui-brand animated uiBrand'; 
+    document.getElementById('ui-brand-span').style.display="block";
+    document.getElementById('ui-brand-span').className='ui-brand-span animated uiBrandSpan';
     }
 
 
@@ -168,7 +170,7 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     const binaryvisionDigita = document.getElementById('case-studies-section').offsetTop + innerHeight*3 - (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
 
-    if(top>=13673){
+    if(top>=3418.25){
         document.getElementById('binaryvision-digital-pic1').style.display="block";
         document.getElementById('binaryvision-digital-pic1').className='pic1 animated fadeInRight'; 
         document.getElementById('binaryvision-digital-pic2').style.display="block";
@@ -179,12 +181,16 @@ document.getElementById('header-title').addEventListener('animationend', () => {
         document.getElementById('digital-brand-content').className='digital-brand-content animated fadeInUp'; 
         document.getElementById('digital-services').style.display="block";
         document.getElementById('digital-services').className='digital-services animated fadeInUp';
+        document.getElementById('digital-brand').style.display="block";
+        document.getElementById('digital-brand').className='digital-brand animated digitalBrand'; 
+        document.getElementById('digital-brand-span').style.display="block";
+        document.getElementById('digital-brand-span').className='digital-brand-span animated digitalBrandSpan';
         }
 
     const binaryvisionBrand = document.getElementById('case-studies-section').offsetTop + innerHeight*4.8 - (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
     
-    if(top>=18524){
+    if(top>=4631){
         document.getElementById('binaryvision-brand-box1').style.display="block";
         document.getElementById('binaryvision-brand-box1').className='box1 animated fadeInLeft'; 
         document.getElementById('binaryvision-brand-box2').style.display="block";
@@ -195,6 +201,10 @@ document.getElementById('header-title').addEventListener('animationend', () => {
         document.getElementById('brand-brand-content').className='brand-brand-content animated fadeInUp'; 
         document.getElementById('brand-services').style.display="block";
         document.getElementById('brand-services').className='brand-services animated fadeInUp';
+        document.getElementById('brand-brand').style.display="block";
+        document.getElementById('brand-brand').className='brand-brand animated brandBrand'; 
+        document.getElementById('brand-brand-span').style.display="block";
+        document.getElementById('brand-brand-span').className='brand-brand-span animated brandBrandSpan';
         }
 
     }
