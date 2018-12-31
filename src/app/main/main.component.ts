@@ -117,9 +117,9 @@ document.getElementById('header-title').addEventListener('animationend', () => {
   
     
     if (top >= caseStudiesSection && top <= caseStudiesSectionEnd) {
-        document.getElementById('logo-image').setAttribute('src', '../../assets/Services/Group 4.png');
+        document.getElementById('logo-image').setAttribute('src', 'assets/Services/Group 4.png');
     } else {
-        document.getElementById('logo-image').setAttribute('src', '../../assets/Services/logo.png');
+        document.getElementById('logo-image').setAttribute('src', 'assets/Services/logo.png');
     }
     //Binary Vision content
     if (top>=binaryvisionSection){
@@ -131,7 +131,7 @@ document.getElementById('header-title').addEventListener('animationend', () => {
       });
     
     //binaryvision-development
-    if(top>=binaryvisionDevelopment){
+    if(top>=4128){
       document.getElementById('binaryvision-development-pic1').style.display="block";
       document.getElementById('binaryvision-development-pic1').className='binaryvision-development-pic animated fadeInRight'; 
       document.getElementById('background1').style.opacity="1";
@@ -140,13 +140,15 @@ document.getElementById('header-title').addEventListener('animationend', () => {
       document.getElementById('development-brand-content').className='development-brand-content animated fadeInUp'; 
       document.getElementById('development-services').style.display="block";
       document.getElementById('development-services').className='development-services animated fadeInUp';
-      // document.getElementById('development-brand-span').style.display="block";
-      // document.getElementById('development-brand-span').className='development-brand-span animated fadeInUp'; 
+      document.getElementById('development-brand').style.display="block";
+      document.getElementById('development-brand').className='development-brand animated developmentBrand'; 
+      document.getElementById('development-brand-span').style.display="block";
+      document.getElementById('development-brand-span').className='development-brand-span animated developmentBrandSpan'; 
     }
     const binaryvisionUi = document.getElementById('case-studies-section').offsetTop + innerHeight*1.3 - (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
 
-    if(top>=binaryvisionUi){
+    if(top>=8918){
     document.getElementById('binaryvision-uiux-pic-box').style.display="block";
     document.getElementById('binaryvision-uiux-pic-box').className='binaryvision-uiux-pic-box animated fadeInLeft'; 
     document.getElementById('background2').style.opacity="1";
@@ -155,12 +157,18 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     document.getElementById('ui-brand-content').className='ui-brand-content animated fadeInUp'; 
     document.getElementById('ui-services').style.display="block";
     document.getElementById('ui-services').className='ui-services animated fadeInUp';
+    document.getElementById('ui-brand').style.display="block";
+      document.getElementById('ui-brand').className='ui-brand animated uiBrand'; 
     }
 
+
+    // if(top>=9500 && top< 9700){
+    // document.getElementById('binaryvision-digital-pic1').style.top="159vw";
+    // }
     const binaryvisionDigita = document.getElementById('case-studies-section').offsetTop + innerHeight*3 - (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
 
-    if(top>=binaryvisionDigita){
+    if(top>=13673){
         document.getElementById('binaryvision-digital-pic1').style.display="block";
         document.getElementById('binaryvision-digital-pic1').className='pic1 animated fadeInRight'; 
         document.getElementById('binaryvision-digital-pic2').style.display="block";
@@ -176,7 +184,7 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     const binaryvisionBrand = document.getElementById('case-studies-section').offsetTop + innerHeight*4.8 - (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
     
-    if(top>=binaryvisionBrand){
+    if(top>=18524){
         document.getElementById('binaryvision-brand-box1').style.display="block";
         document.getElementById('binaryvision-brand-box1').className='box1 animated fadeInLeft'; 
         document.getElementById('binaryvision-brand-box2').style.display="block";

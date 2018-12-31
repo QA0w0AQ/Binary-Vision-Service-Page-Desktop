@@ -2,6 +2,14 @@
     outline: none;
   }
 
+
+// .parallax {
+//   min-height: 500px;
+//   background: transparent;
+// }
+
+
+
 .title {
     font-size: 4.8vw;
     line-height: 4.8vw;
@@ -474,27 +482,38 @@ header {
         position: relative;
         height: 38vw;
     }
+
     .development-brand {
         font-size: 2.2vw;
-        top: -8vw;
+        // top: -8vw;
         left: -10vw;
         position: absolute;
         transform: rotate(-90deg);
         font-family: sans-serif;
         z-index: 1;
-        // display: none;
-        // animation-duration: 1s;
+        animation-name: developmentBrand;
+        display: none;
+        animation-duration: 1s;
+        }
+        @keyframes developmentBrand {
+          from { top: 0vw;opacity: 0;}
+          to {top: -8vw;opacity: 1;}
         }
         .development-brand-span{
             font-size: 1.5vw;
             left: 6vw;
-            top: 3vw;
+            // top: 3vw;
             position: absolute;
             transform: rotate(-90deg);
             font-family: 'Poppins', sans-serif;
             z-index: 1;
-            // display: none;
-            // animation-duration: 1s;
+            display: none;
+            animation-duration: 1s;
+            animation-name: developmentBrandSpan;
+        }
+        @keyframes developmentBrandSpan {
+          from { top: 8vw;opacity: 0;}
+          to {top: 3vw;opacity: 1;}
         }
         .background1 {
             // display: none;
@@ -578,6 +597,13 @@ header {
             transform: rotate(90deg);
             font-family: sans-serif; 
             z-index: 1;
+            animation-name: uiBrand;
+            // display: none;
+            animation-duration: 1s;
+        }
+        @keyframes uiBrand {
+          from { top: 86vw;opacity: 0;} 
+          to {top: 76vw;opacity: 1;}
         }
         .ui-brand-span{
             font-size: 1.5vw;
@@ -618,6 +644,7 @@ header {
             position: absolute;
             top: 62vw;
             display: none;
+            // transition: 2s;
             img{
                 width: 51%;
             }
@@ -636,7 +663,6 @@ header {
                 left: 20vw;
             }
         }
-
         .backgroud3 {
             background: #FE294D;
             height: 50vw;
@@ -703,9 +729,13 @@ header {
                 top: 136vw;
                 right: 5vw;
                 display: none;
+                // transition: 2s;
+                // transform: translateY(300px);
+
                 img {
                     width: 67vw;
                 }
+                // animation-name:pic1;
             }
             .pic2 {
                 display: none;
@@ -715,6 +745,10 @@ header {
                 img {
                     width: 28vw;
                 }
+                // @keyframes pic1 {
+                //   from {opacity: 0;}
+                //   to {opacity: 1;}
+                // }
             }
         }
 
