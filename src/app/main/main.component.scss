@@ -61,6 +61,18 @@
   }
 /* FOOTER */
 .footer {
+
+  .title{
+    text-align: left;
+    font-size: 4vw;
+  }
+  .subtitle{
+    float: none;
+    font-size: 4vw;
+  }
+  span{
+    font-family: 'Poppins', sans-serif;
+  }
     display: none;
     position: fixed;
     right: 0;
@@ -84,6 +96,7 @@
           }
           span {
             display: block;
+            font-weight: 100;
           }
           h2 {
             display: block;
@@ -160,6 +173,7 @@
         span {
           font-size: 1vw;
           font-weight: 300;
+          color: white;
         }
       }
     }
@@ -532,6 +546,7 @@ header {
         
         .binaryvision-development-pic {
             img {
+                // position: fixed;
                 position: absolute;
                 top: -15vw;
                 height: 77vw;
@@ -743,7 +758,11 @@ header {
                 display: none;
                 // transition: 2s;
                 // transform: translateY(300px);
-
+              // animation-name: fadeDown;
+              // @keyframes fadeDown {
+              //   from { top: 136vw;animation-duration: 1s} 
+              //   to {top: 156vw;}
+              // }
                 img {
                     width: 67vw;
                 }

@@ -26,14 +26,11 @@ export class MainComponent implements OnInit {
 
     scrollTo(type) {
         window.scrollBy({
-            // top: type === 'header' ? document.getElementById('members-list').offsetTop - document.documentElement.scrollTop :
-            //     document.getElementById('case-studies-section').offsetTop - document.documentElement.scrollTop,
-            top: type === 'header' ? document.getElementById('skills-section').offsetTop - document.documentElement.scrollTop :
+            top: type === 'header' ? document.getElementById('case-studies-section binaryvision').offsetTop - document.documentElement.scrollTop :
                 document.getElementById('case-studies-section').offsetTop - document.documentElement.scrollTop,
             behavior: 'smooth'
         });
     }
-
     routeTo(page) {
       // location.href = location.href.split('/')[0] + '/' + page;
   }
@@ -64,6 +61,27 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit() {
+    // window.addEventListener("DOMContentLoaded",scrollLoop, false);
+
+    // var pic1 = document.querySelector("#binaryvision-development-pic1");
+    // // var pic2 = document.querySelector("#binaryvision-digital-pic2");
+    
+    // var xScrollPosition;
+    // var yScrollPosition;
+    
+    // function scrollLoop(e){
+    //     xScrollPosition = window.scrollX;
+    //     yScrollPosition = window.scrollY;
+    
+    //     setTranslate(0,yScrollPosition *0.01, pic1);
+    
+    //     requestAnimationFrame(scrollLoop);
+    // }
+    
+    // function setTranslate(xPos,yPos, el) {
+    //     el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0";
+    // }
+
     this.navbarHeight = document.getElementById('logo-nav-box').offsetHeight;
     setTimeout(() => {
       document.getElementById('logo-nav-box').style.display = 'flex';
@@ -112,8 +130,7 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     const caseStudiesSectionEnd = document.getElementById('case-studies-section').offsetTop +
         document.getElementById('case-studies-section').offsetHeight;
     
-    const binaryvisionDevelopment = document.getElementById('case-studies-section').offsetTop - (window.innerHeight * 14 / 100) -
-    (window.innerHeight * 12 / 100) * 2;
+    const binaryvisionDevelopment = document.getElementById('background1').offsetTop + (window.innerHeight * 1326 / 1000);
   
     
     if (top >= caseStudiesSection && top <= caseStudiesSectionEnd) {
@@ -131,7 +148,7 @@ document.getElementById('header-title').addEventListener('animationend', () => {
       });
     
     //binaryvision-development
-    if(top>=1032){
+    if(top>=binaryvisionDevelopment){
       document.getElementById('binaryvision-development-pic1').style.display="block";
       document.getElementById('binaryvision-development-pic1').className='binaryvision-development-pic animated fadeInRight'; 
       document.getElementById('background1').style.opacity="1";
@@ -145,10 +162,9 @@ document.getElementById('header-title').addEventListener('animationend', () => {
       document.getElementById('development-brand-span').style.display="block";
       document.getElementById('development-brand-span').className='development-brand-span animated developmentBrandSpan'; 
     }
-    const binaryvisionUi = document.getElementById('case-studies-section').offsetTop + innerHeight*1.3 - (window.innerHeight * 14 / 100) -
-    (window.innerHeight * 12 / 100) * 2;
+    const binaryvisionUi = document.getElementById('background2').offsetTop + window.innerHeight*1.69
 
-    if(top>=2229.5){
+    if(top>=2189){
     document.getElementById('binaryvision-uiux-pic-box').style.display="block";
     document.getElementById('binaryvision-uiux-pic-box').className='binaryvision-uiux-pic-box animated fadeInLeft'; 
     document.getElementById('background2').style.opacity="1";
@@ -163,14 +179,10 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     document.getElementById('ui-brand-span').className='ui-brand-span animated uiBrandSpan';
     }
 
-
-    // if(top>=9500 && top< 9700){
-    // document.getElementById('binaryvision-digital-pic1').style.top="159vw";
-    // }
     const binaryvisionDigita = document.getElementById('case-studies-section').offsetTop + innerHeight*3 - (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
 
-    if(top>=3418.25){
+    if(top>=3393.25){
         document.getElementById('binaryvision-digital-pic1').style.display="block";
         document.getElementById('binaryvision-digital-pic1').className='pic1 animated fadeInRight'; 
         document.getElementById('binaryvision-digital-pic2').style.display="block";
@@ -186,11 +198,16 @@ document.getElementById('header-title').addEventListener('animationend', () => {
         document.getElementById('digital-brand-span').style.display="block";
         document.getElementById('digital-brand-span').className='digital-brand-span animated digitalBrandSpan';
         }
-
+    // if(top>=3500.25){
+    //         document.getElementById('binaryvision-digital-pic1').className='pic1';
+    //     }
+    // if(top>=3933.25){
+    //     document.getElementById('binaryvision-digital-pic1').className='pic1 animated fadeDown';
+    // }
     const binaryvisionBrand = document.getElementById('case-studies-section').offsetTop + innerHeight*4.8 - (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
     
-    if(top>=4631){
+    if(top>=4531){
         document.getElementById('binaryvision-brand-box1').style.display="block";
         document.getElementById('binaryvision-brand-box1').className='box1 animated fadeInLeft'; 
         document.getElementById('binaryvision-brand-box2').style.display="block";
