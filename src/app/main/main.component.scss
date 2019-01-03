@@ -750,36 +750,88 @@ header {
         }
 
         .binaryvision-digital-pic-box {
-          // display: none;
+          // opacity: 0;
+          display: none;
+          z-index: 2;
+          position: absolute;
+          left: 98vw;
+          top: 0vw;
+          animation-name: fadeFromRight;
+          @keyframes fadeFromRight {
+            from { left: 136vw;opacity: 0;} 
+            to {left: 98vw;opacity: 1;}
+          }
             .pic1 {
                 position: absolute;
                 top: 136vw;
                 right: 5vw;
-                display: none;
+                // display: none;
                 // transition: 2s;
                 // transform: translateY(300px);
-              // animation-name: fadeDown;
-              // @keyframes fadeDown {
-              //   from { top: 136vw;animation-duration: 1s} 
-              //   to {top: 156vw;}
-              // }
                 img {
                     width: 67vw;
                 }
-                // animation-name:pic1;
+            }
+            .pic1C{
+              position: absolute;
+              animation-name: fadeDown1;
+              top: 136vw;
+              right: 5vw;
+              img {
+                width: 67vw;
+            }
+              @keyframes fadeDown1 {
+                from { top: 136vw;animation-duration: 1s} 
+                to {top: 160vw;}
+              }
+            }
+            .pic1CC{
+              position: absolute;
+              animation-name: fadeDown11;
+              top: 160vw;
+              right: 5vw;
+              img {
+                width: 67vw;
+            }
+              @keyframes fadeDown11 {
+                from { top: 160vw;animation-duration: 1s} 
+                to {top: 136vw;}
+              }
             }
             .pic2 {
-                display: none;
+                // display: none;
                 position: absolute;
                 top: 155vw;
                 right: 0vw;
                 img {
                     width: 28vw;
                 }
-                // @keyframes pic1 {
-                //   from {opacity: 0;}
-                //   to {opacity: 1;}
-                // }
+            }
+            .pic2C{
+              position: absolute;
+                top: 155vw;
+                right: 0vw;
+                animation-name: fadeDown2;
+                img {
+                  width: 28vw;
+              }
+              @keyframes fadeDown2 {
+                from { top: 155vw;animation-duration: 1s} 
+                to {top: 136vw;}
+              }
+            }
+            .pic2CC{
+              position: absolute;
+                top: 136vw;
+                right: 0vw;
+                animation-name: fadeDown22;
+                img {
+                  width: 28vw;
+              }
+              @keyframes fadeDown22 {
+                from { top: 136vw;animation-duration: 1s} 
+                to {top: 155vw;}
+              }
             }
         }
 

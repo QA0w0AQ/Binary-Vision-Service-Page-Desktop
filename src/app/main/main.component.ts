@@ -11,6 +11,7 @@ export class MainComponent implements OnInit {
   lastScrollTop: number = 0;
   delta: number = 5;
   didScroll: boolean;
+  phoneHeight: number;
 
   constructor() { }
 
@@ -183,10 +184,12 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     (window.innerHeight * 12 / 100) * 2;
 
     if(top>=3393.25){
-        document.getElementById('binaryvision-digital-pic1').style.display="block";
-        document.getElementById('binaryvision-digital-pic1').className='pic1 animated fadeInRight'; 
-        document.getElementById('binaryvision-digital-pic2').style.display="block";
-        document.getElementById('binaryvision-digital-pic2').className='pic2 animated fadeInRight';
+        // document.getElementById('binaryvision-digital-pic1').style.display="block";
+        // document.getElementById('binaryvision-digital-pic1').className='pic1 animated fadeInRight'; 
+        // document.getElementById('binaryvision-digital-pic2').style.display="block";
+        // document.getElementById('binaryvision-digital-pic2').className='pic2 animated fadeInRight';
+        document.getElementById('binaryvision-digital-pic-box').style.display="block";
+        document.getElementById('binaryvision-digital-pic-box').className='binaryvision-digital-pic-box animated fadeFromRight';
         document.getElementById('backgroud3').style.opacity="1";
         document.getElementById('backgroud3').className='backgroud3 animated fadeInLeft';
         document.getElementById('digital-brand-content').style.display="block";
@@ -201,9 +204,44 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     // if(top>=3500.25){
     //         document.getElementById('binaryvision-digital-pic1').className='pic1';
     //     }
-    // if(top>=3933.25){
-    //     document.getElementById('binaryvision-digital-pic1').className='pic1 animated fadeDown';
+    // if(top>=3585.25){
+
+
+        $(window).bind('mousewheel', function(event) {
+            if (event.originalEvent.wheelDelta  >= 0 ) {
+                // ('Scroll up');
+                document.getElementById('binaryvision-digital-pic1').className='pic1CC animated fadeDown11';
+                document.getElementById('binaryvision-digital-pic2').className='pic2CC animated fadeDown22';
+            }
+            else {
+                // 'Scroll down');
+                document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
+                document.getElementById('binaryvision-digital-pic2').className='pic2C animated fadeDown2';
+                
+            }
+        });
+
+
+        // document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
+        // document.getElementById('binaryvision-digital-pic2').className='pic2C animated fadeDown2';
     // }
+    // this.phoneHeight = document.getElementById('binaryvision-digital-pic-box').offsetHeight;
+    // if (top>=3585.25) {
+    //     if( top > this.lastScrollTop && top > this.phoneHeight){
+    //         document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
+    //         document.getElementById('binaryvision-digital-pic2').className='pic2C animated fadeDown2';
+    //     }
+    //     else{
+    //         document.getElementById('binaryvision-digital-pic1').className='pic1';
+    //         document.getElementById('binaryvision-digital-pic2').className='pic2';
+    //     }
+    // } 
+    // else {
+    //     if (top < this.lastScrollTop || top < this.navbarHeight) {
+            
+    //     }
+    // }
+
     const binaryvisionBrand = document.getElementById('case-studies-section').offsetTop + innerHeight*4.8 - (window.innerHeight * 14 / 100) -
     (window.innerHeight * 12 / 100) * 2;
     
