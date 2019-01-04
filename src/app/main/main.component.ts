@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { fn } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-main',
@@ -61,6 +62,7 @@ export class MainComponent implements OnInit {
       this.lastScrollTop = st;
   }
 
+
   ngOnInit() {
     // window.addEventListener("DOMContentLoaded",scrollLoop, false);
 
@@ -110,6 +112,45 @@ document.getElementById('header-title').addEventListener('animationend', () => {
 //   document.getElementById('binaryvision').style.display = 'block';
 //   document.getElementById('binaryvision').className = 'binaryvision animated fadeInLeft';
 // });
+
+// window.addEventListener('mousewheel',(e)=>{
+//     if (event.originalEvent.wheelDelta  >= 0 ) {
+//         // ('Scroll up');
+//         document.getElementById('binaryvision-digital-pic1').className='pic1CC animated fadeDown11';
+//         document.getElementById('binaryvision-digital-pic2').className='pic2CC animated fadeDown22';
+//     }
+//     else {
+//         // 'Scroll down');
+//         document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
+//         document.getElementById('binaryvision-digital-pic2').className='pic2C animated fadeDown2';
+        
+//     }
+// });
+var wt = window.addEventListener
+    if(wt){
+        wt("mousewheel", MouseWheelHandler, false);
+        wt("DOMMouseScroll", MouseWheelHandler, false);
+    }
+    else
+    {
+        wt("onmousewheel",MouseWheelHandler);
+    }
+
+  function  MouseWheelHandler(e){
+    var e = window.event || e;
+    if(e.wheelDelta >=0){
+        // ('Scroll up');
+        document.getElementById('binaryvision-digital-pic1').className='pic1CC animated fadeDown11';
+        document.getElementById('binaryvision-digital-pic2').className='pic2CC animated fadeDown22';
+    }
+    else
+    {
+                // 'Scroll down');
+        document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
+        document.getElementById('binaryvision-digital-pic2').className='pic2C animated fadeDown2';
+    }
+    // var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+  }
 
 
   window.addEventListener('scroll',()=>{
@@ -206,20 +247,20 @@ document.getElementById('header-title').addEventListener('animationend', () => {
     //     }
     // if(top>=3585.25){
 
-
-        $(window).bind('mousewheel', function(event) {
-            if (event.originalEvent.wheelDelta  >= 0 ) {
-                // ('Scroll up');
-                document.getElementById('binaryvision-digital-pic1').className='pic1CC animated fadeDown11';
-                document.getElementById('binaryvision-digital-pic2').className='pic2CC animated fadeDown22';
-            }
-            else {
-                // 'Scroll down');
-                document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
-                document.getElementById('binaryvision-digital-pic2').className='pic2C animated fadeDown2';
+        // var $ = window.addEventListener();
+        // $(window).bind('mousewheel', function(event) {
+        //     if (event.originalEvent.wheelDelta  >= 0 ) {
+        //         // ('Scroll up');
+        //         document.getElementById('binaryvision-digital-pic1').className='pic1CC animated fadeDown11';
+        //         document.getElementById('binaryvision-digital-pic2').className='pic2CC animated fadeDown22';
+        //     }
+        //     else {
+        //         // 'Scroll down');
+        //         document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
+        //         document.getElementById('binaryvision-digital-pic2').className='pic2C animated fadeDown2';
                 
-            }
-        });
+        //     }
+        // });
 
 
         // document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
