@@ -659,23 +659,78 @@ header {
             top: 62vw;
             display: none;
             // transition: 2s;
+            // animation-name: uiFadeUp;
+            // @keyframes uiFadeUp {
+            //   from { top: 62vw;} 
+            //   to {top: 82vw;}
+            // }
             img{
                 width: 51%;
             }
-            .pic1{
+            .binaryvision-uiux-pic-box-pic1{
                 position: relative;
                 top: 2vw;
+                animation-name: uipic1FadeUp;
+                animation-duration: 1s;
             }
-            .pic2{
+            @keyframes uipic1FadeUp {
+              from { top: 8vw;} 
+              to {top: 2vw;}
+            }
+            .binaryvision-uiux-pic-box-pic11{
+              position: relative;
+              top: 8vw;
+              animation-name: uipic1FadeDown;
+              animation-duration: 1s;
+          }
+          @keyframes uipic1FadeDown {
+            from { top: 2vw;} 
+            to {top: 8vw;}
+          }
+            .binaryvision-uiux-pic-box-pic2{
                 position: relative;
                 top: -52vw;
                 left: 24vw;
+                animation-name: uipic2FadeUp;
+                animation-duration: 1s;
             }
-            .pic3{
+            @keyframes uipic2FadeUp {
+              from { top: -46vw;} 
+              to {top: -52vw;}
+            }
+            .binaryvision-uiux-pic-box-pic22{
+              position: relative;
+              top: -46vw;
+              left: 24vw;
+              animation-name: uipic2FadeDown;
+              animation-duration: 1s;
+          }
+          @keyframes uipic2FadeDown {
+            from { top: -52vw;} 
+            to {top: -46vw;}
+          }
+            .binaryvision-uiux-pic-box-pic3{
                 position: relative;
                 top: -53vw;
                 left: 20vw;
+                animation-name: uipic3FadeUp;
+                animation-duration: 1s;
             }
+            @keyframes uipic3FadeUp {
+              from { top: -47vw;} 
+              to {top: -53vw;}
+            }
+            .binaryvision-uiux-pic-box-pic33{
+              position: relative;
+              top: -47vw;
+              left: 20vw;
+              animation-name: uipic3FadeDown;
+              animation-duration: 1s;
+          }
+          @keyframes uipic3FadeDown {
+            from { top: -53vw;} 
+            to {top: -47vw;}
+          }
         }
         .backgroud3 {
             background: #FE294D;

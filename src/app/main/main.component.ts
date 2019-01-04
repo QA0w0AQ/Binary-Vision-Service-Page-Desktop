@@ -113,19 +113,6 @@ document.getElementById('header-title').addEventListener('animationend', () => {
 //   document.getElementById('binaryvision').className = 'binaryvision animated fadeInLeft';
 // });
 
-// window.addEventListener('mousewheel',(e)=>{
-//     if (event.originalEvent.wheelDelta  >= 0 ) {
-//         // ('Scroll up');
-//         document.getElementById('binaryvision-digital-pic1').className='pic1CC animated fadeDown11';
-//         document.getElementById('binaryvision-digital-pic2').className='pic2CC animated fadeDown22';
-//     }
-//     else {
-//         // 'Scroll down');
-//         document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
-//         document.getElementById('binaryvision-digital-pic2').className='pic2C animated fadeDown2';
-        
-//     }
-// });
 var wt = window.addEventListener
     if(wt){
         wt("mousewheel", MouseWheelHandler, false);
@@ -142,14 +129,19 @@ var wt = window.addEventListener
         // ('Scroll up');
         document.getElementById('binaryvision-digital-pic1').className='pic1CC animated fadeDown11';
         document.getElementById('binaryvision-digital-pic2').className='pic2CC animated fadeDown22';
+        document.getElementById('binaryvision-uiux-pic-box-pic1').className='binaryvision-uiux-pic-box-pic1 animated uipic1FadeUp';
+        document.getElementById('binaryvision-uiux-pic-box-pic2').className='binaryvision-uiux-pic-box-pic2 animated uipic2FadeUp';
+        document.getElementById('binaryvision-uiux-pic-box-pic3').className='binaryvision-uiux-pic-box-pic3 animated uipic3FadeUp';
     }
     else
     {
-                // 'Scroll down');
+        // 'Scroll down');
         document.getElementById('binaryvision-digital-pic1').className='pic1C animated fadeDown1';
         document.getElementById('binaryvision-digital-pic2').className='pic2C animated fadeDown2';
+        document.getElementById('binaryvision-uiux-pic-box-pic1').className='binaryvision-uiux-pic-box-pic11 animated uipic1FadeDown';
+        document.getElementById('binaryvision-uiux-pic-box-pic2').className='binaryvision-uiux-pic-box-pic22 animated uipic2FadeDown';
+        document.getElementById('binaryvision-uiux-pic-box-pic3').className='binaryvision-uiux-pic-box-pic33 animated uipic3FadeDown';
     }
-    // var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
   }
 
 
