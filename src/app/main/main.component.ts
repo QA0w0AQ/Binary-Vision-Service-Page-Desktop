@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fn } from '@angular/compiler/src/output/output_ast';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-main',
@@ -143,6 +144,38 @@ var wt = window.addEventListener
         document.getElementById('binaryvision-uiux-pic-box-pic3').className='binaryvision-uiux-pic-box-pic33 animated uipic3FadeDown';
     }
   }
+
+  var lFollowX = 0,
+    lFollowY = 0,
+    x = 0,
+    y = 0,
+    friction = 1 / 20;
+
+function moveBackground() {
+  x += (lFollowX - x) * friction;
+  y += (lFollowY - y) * friction;
+
+  var translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+  $('.binaryvision-development-pic').css({
+    '-webit-transform': translate,
+    '-moz-transform': translate,
+    'transform': translate
+  });
+
+  window.requestAnimationFrame(moveBackground);
+}
+
+$(window).on('mousemove click', function(e) {
+
+  var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+  var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+  lFollowX = (25 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+  lFollowY = (15 * lMouseY) / 100;
+
+});
+
+moveBackground();
 
 
   window.addEventListener('scroll',()=>{

@@ -548,11 +548,13 @@ header {
             img {
                 // position: fixed;
                 position: absolute;
-                top: -15vw;
+                top: -63vw;
                 height: 77vw;
                 left: 42vw;
                 display: none;
                 animation-duration: 1s;
+                z-index: 1;
+                transform: scale(1.1);
             }
 
         }
